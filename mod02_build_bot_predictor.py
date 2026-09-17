@@ -11,9 +11,9 @@ def train_model(X, y, seed=seed):
     """
     model = GradientBoostingClassifier(
         learning_rate=0.1,
-        n_estimators=275,
+        n_estimators=280,
         max_depth=12,
-        subsample=1,
+        subsample=.8,
         min_samples_leaf=1,
         random_state=seed
     )
